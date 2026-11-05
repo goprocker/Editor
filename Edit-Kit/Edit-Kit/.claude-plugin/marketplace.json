@@ -1,0 +1,7 @@
+{
+  "name": "edit-kit",
+  "owner": { "name": "Sahil Sharma" },
+  "plugins": [
+    { "name": "edit-kit", "source": "./", "description": "Edit Kit: prompt-to-video editing." }
+  ]
+}

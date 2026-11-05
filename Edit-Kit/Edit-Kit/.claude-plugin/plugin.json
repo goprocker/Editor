@@ -1,0 +1,8 @@
+{
+  "name": "edit-kit",
+  "version": "1.0.0",
+  "description": "Edit Kit: prompt-to-video editing for Claude Code. Reels, YouTube edits, SaaS and product films, kinetic captions, frame-synced sound and QA. Built on HyperFrames.",
+  "author": { "name": "Sahil Sharma" },
+  "license": "MIT",
+  "keywords": ["video", "editing", "motion graphics", "reels", "youtube", "hyperframes"]
+}

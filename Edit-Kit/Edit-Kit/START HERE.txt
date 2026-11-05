@@ -1,0 +1,62 @@
+EDIT KIT: install in about 10 minutes (one time)
+
+Type one prompt in Claude Code, get a finished, professionally edited video:
+Reels, YouTube edits, SaaS and product films, explainers and special looks, with kinetic captions
+and sound that hits on the frame.
+
+
+WHAT YOU NEED
+- Claude Code (needs a paid Claude plan: Pro or Max). The desktop app "Code" tab or the Terminal both work.
+- Node.js 22 or newer  ->  nodejs.org  (download, next, next, finish)
+- FFmpeg               ->  Mac: open Terminal and run   npm i -g ffmpeg-static
+                           Windows: open PowerShell and run   winget install ffmpeg
+- Python packages      ->  Mac: open Terminal and run   pip3 install pillow numpy
+                           Windows: install Python from python.org (tick "Add python.exe to PATH"),
+                           then run   python -m pip install pillow numpy
+- Windows only: Git for Windows (git-scm.com), Claude Code needs it.
+
+
+STEP 1: INSTALL (pick ONE way)
+a) Double-click "1. Install (Mac).command" or "1. Install (Windows).bat".
+   Mac may block it the first time: right-click it > Open > Open.
+b) Or let Claude do it: open Claude Code and type
+     install the skills from this folder: <drag this folder into the chat>
+c) Or by hand: copy every folder inside "skills" into
+     Mac:      ~/.claude/skills        (Finder: Cmd+Shift+G, paste the path)
+     Windows:  C:\Users\<you>\.claude\skills
+If you already had skills with the same names, the installer saves your old copies in .claude/skills-backup first.
+
+
+STEP 2: CHECK IT WORKS (2-5 minutes)
+Double-click "2. Self-test (Mac).command" or "2. Self-test (Windows).bat".
+It checks everything and renders a 3-second test video with sound.
+"ALL PASSED" = you're ready. If something fails it says what is missing; fix it and run it again.
+
+
+STEP 3: EDIT
+Close and reopen Claude Code, then type for example:
+  /edit edit ~/Downloads/myclip.mp4 as a reel
+  /edit make a 20 second launch video for my app "Flowly", 16:9
+  /edit YouTube edit of interview.mp4 with a lower third and chapter titles
+Claude asks a few questions (style, format, colours), shows a storyboard, builds the edit,
+adds sound and checks everything before handing you the MP4.
+
+
+THE 11 STYLES
+Creator Explainer, SaaS, Motion Graphics Explainer, Vox, Ali Abdaal, Real Estate, Construction,
+Gadzhi, Bold Impact, Podcast, Finance. Plus special looks: anime, pixel art, whiteboard, paper cutout,
+crayon, painted and 3D product. Just describe your video; Claude recommends one.
+
+
+CLIENT BRANDS
+Editing for a client? Their colours, fonts and logo go in
+  ~/.claude/motion-kit/brands/<client-name>/brand.json
+(copy the _template folder there). Claude uses it for every video of that client.
+
+
+UPDATES
+Get the new kit folder and run the installer again. Your old version is backed up automatically.
+
+
+CREDITS
+Some extra skills are open-source work by other creators, kept under their original names. See CREDITS.md.
